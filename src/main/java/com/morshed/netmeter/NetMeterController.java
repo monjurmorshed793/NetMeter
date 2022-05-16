@@ -4,18 +4,9 @@ package com.morshed.netmeter;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.util.Duration;
-import oshi.hardware.NetworkIF;
-import oshi.hardware.platform.windows.WindowsNetworkIF;
-
-import java.net.NetworkInterface;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.concurrent.TimeUnit;
 
 
-public class HelloController {
+public class NetMeterController {
     @FXML
     public Label welcomeText;
     @FXML
