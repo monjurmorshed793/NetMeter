@@ -140,9 +140,9 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>com.morshed.netmeter/com.morshed.netmeter.NetMeterApplication</mainClass>
-                            <launcher>app</launcher>
-                            <jlinkZipName>app</jlinkZipName>
-                            <jlinkImageName>app</jlinkImageName>
+                            <launcher>net-meter</launcher>
+                            <jlinkZipName>net-meter</jlinkZipName>
+                            <jlinkImageName>net-meter</jlinkImageName>
                             <noManPages>true</noManPages>
                             <stripDebug>true</stripDebug>
                             <noHeaderFiles>true</noHeaderFiles>

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jlink" build-on-make="true" name="netmeter">
-    <output-path>$PROJECT_DIR$/out/artifacts/netmeter</output-path>
+    <output-path>$USER_HOME$/Desktop</output-path>
     <properties id="jlink-properties">
       <options>
         <option name="compressionLevel" value="2" />

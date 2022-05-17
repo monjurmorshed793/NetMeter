@@ -34,7 +34,7 @@ public class NetMeterApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(NetMeterApplication.class.getResource("netmeter-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 120, 30);
+        Scene scene = new Scene(fxmlLoader.load(), 130, 30);
         StageStyle stageStyle= StageStyle.UNDECORATED;
         stage.initStyle(stageStyle);
 
