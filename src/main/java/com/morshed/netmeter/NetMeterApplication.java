@@ -1,13 +1,16 @@
 package com.morshed.netmeter;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
@@ -82,6 +85,9 @@ public class NetMeterApplication extends Application {
         stage.setResizable(false);
         stage.setMaxHeight(15);
         stage.setMaxWidth(scene.getWidth());
+        Rectangle2D screenBounds = Screen.getPrimary().getBounds();
+        stage.setX(screenBounds.getWidth()/2);
+        stage.setY(0);
         stage.show();
     }
 
