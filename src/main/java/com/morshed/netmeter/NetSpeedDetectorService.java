@@ -4,14 +4,10 @@ import javafx.concurrent.ScheduledService;
 import javafx.concurrent.Task;
 import oshi.hardware.NetworkIF;
 import oshi.hardware.platform.windows.WindowsNetworkIF;
-import oshi.util.FormatUtil;
 
-import java.math.RoundingMode;
-import java.net.InterfaceAddress;
 import java.net.NetworkInterface;
 import java.util.Collections;
 import java.util.Enumeration;
-import java.util.TimerTask;
 
 public class NetSpeedDetectorService extends ScheduledService<SpeedModel> {
     NetworkIF networkIF;

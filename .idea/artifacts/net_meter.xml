@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jlink" build-on-make="true" name="net-meter">
+    <output-path>$PROJECT_DIR$/out/artifacts/net_meter</output-path>
+    <root id="root" />
+  </artifact>
+</component>
