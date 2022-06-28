@@ -20,7 +20,7 @@ public class NetSpeedDetectorService extends ScheduledService<SpeedModel> {
                     continue;
                 if(networkInterface.isUp()){
 
-                    if(networkInterface.getName().equalsIgnoreCase("wlan0")){
+                    if(networkInterface.getName().contains("wlan")){
                         networkIF = new WindowsNetworkIF(networkInterface);
                         break;
                     }

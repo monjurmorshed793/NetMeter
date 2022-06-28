@@ -1,0 +1,12 @@
+jpackage --type exe --name NetMeter --description "Netmeter:: for checking internet speed on the go!" --vendor "Open-Source" --app-version 1.0.0 --input NetMeter/target --dest output3 --main-jar NetMeter-1.0-SNAPSHOT.jar --main-class classes/com/morshed/netmeter/NetMeterApplication.class  --win-shortcut --win-menu
+
+
+
+jpackage --verbose --type exe --name netmeter --description "Netmeter:: for checking internet speed on the go!" --vendor "Open-Source" --app-version 1.0.0 --input target --dest output --main-jar netmeter-jar-with-dependencies.jar --main-class com.morshed.netmeter.NetMeterApplication  --win-shortcut --win-menu  --runtime-image D:/zulu-jdk-17
+
+
+--runtime-image D:/zulu-jdk-17
+
+--add-modules javafx.controls,javafx.fxml,javafx.web,com.github.oshi,org.controlsfx.controls,com.dlsc.formsfx,org.kordamp.ikonli.javafx,org.kordamp.bootstrapfx.core,eu.hansolo.tilesfx
+
+jpackage --verbose --type exe --name netmeter --description "Netmeter:: for checking internet speed on the go!" --vendor "Open-Source" --app-version 1.0.0 --input target --dest output --main-jar netmeter-jar-with-dependencies.jar --main-class com.morshed.netmeter.NetMeterApplication  --win-shortcut --win-menu  --module-path D:/javafx/openjfx-18.0.1_windows-x64_bin-jmods/javafx-jmods-18.0.1  --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web

@@ -15,6 +15,7 @@ import javafx.stage.StageStyle;
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.spi.ToolProvider;
 
 public class NetMeterApplication extends Application {
     String inboundSpeed, outboundSpeed;
@@ -90,5 +91,18 @@ public class NetMeterApplication extends Application {
 
     public static void main(String[] args) {
         launch();
+//        packageApplication();
+    }
+
+    private static void packageApplication(){
+        ToolProvider jpackageTool  = ToolProvider.findFirst("jpackage")
+                .orElseThrow(()-> new RuntimeException("jpackage not found"));
+
+        int retVal = jpackageTool
+                .run(System.out, System.err,
+                        "--package-type", "exe",
+                        "--name", "NetMeter",
+                        "--description", "Net meter: for checking the internet speed on the go",
+                        "--vendor", "Open-Source");
     }
 }
