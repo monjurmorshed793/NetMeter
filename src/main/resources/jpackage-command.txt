@@ -2,7 +2,7 @@ jpackage --type exe --name NetMeter --description "Netmeter:: for checking inter
 
 
 
-jpackage --verbose --type exe --name netmeter --description "Netmeter:: for checking internet speed on the go!" --vendor "Open-Source" --app-version 1.0.0 --input target --dest output --main-jar netmeter-jar-with-dependencies.jar --main-class com.morshed.netmeter.NetMeterApplication  --win-shortcut --win-menu  --runtime-image D:/zulu-jdk-17
+jpackage --verbose --type exe --name netmeter --description "Netmeter:: for checking internet speed on the go!" --vendor "Open-Source" --app-version 1.0.0 --input target --dest output --main-jar netmeter-jar-with-dependencies.jar --main-class com.morshed.netmeter.NetMeterApplication  --win-shortcut --win-menu  --runtime-image D:/zulu-jdk-17  --icon icon/net-meter.ico
 
 
 --runtime-image D:/zulu-jdk-17
