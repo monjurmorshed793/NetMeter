@@ -17,8 +17,6 @@ import java.util.ResourceBundle;
 
 public class NetMeterController implements Initializable {
     @FXML
-    public Label welcomeText;
-    @FXML
     public Label inboundSpeed;
     @FXML
     public Label outboundSpeed;
@@ -30,16 +28,20 @@ public class NetMeterController implements Initializable {
     public Button closeButton;
     @FXML
     public HBox buttonHbox;
+    @FXML
     public Image inboundImage;
+    @FXML
     public Image outboundImage;
 
     public NetMeterController() throws InterruptedException {
-        inboundImage = new Image("/down.png");
-        outboundImage = new Image("/up.png");
+        inboundImage = new Image(NetMeterController.class.getResourceAsStream("/down.png"));
+        outboundImage = new Image(NetMeterController.class.getResourceAsStream("/up.png"));
         inboundImageView = new ImageView();
         inboundImageView.setImage(inboundImage);
+        inboundImageView.setCache(true);
         outboundImageView = new ImageView();
         outboundImageView.setImage(outboundImage);
+        outboundImageView.setCache(true);
         calculateSpeed();
     }
 
@@ -52,13 +54,6 @@ public class NetMeterController implements Initializable {
             outboundSpeed.setText(speedModel.getOutboundSpeed()+"");
         });
         netSpeedDetectorService.start();
-    }
-
-    @FXML
-    public void onHelloButtonClick() throws Exception {
-        System.out.println("In hello button click");
-        calculateSpeed();
-        welcomeText.setText("Welcome to JavaFX Application!");
     }
 
     public void showButton(){
